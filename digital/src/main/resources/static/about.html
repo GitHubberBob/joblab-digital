@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <link rel="icon" type="image/x-icon" href="https://www.legendarymotorsport.ro/wp-content/uploads/2022/06/Untitled-1.png">
+        <meta charset="UTF-8">
+        <title>Legendary Motorsport</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function time()
+            {
+                let clock=new Date()
+                let hr=clock.getHours()
+                let min=clock.getMinutes()
+                let sec=clock.getSeconds()
+                let hours=document.querySelector("#hours")
+                if(hr>12)
+                day.innerHTML="PM"
+                if(hr>12)
+                hr=hr-12
+                if(hr<10)
+                hr="0"+hr
+                hours.innerHTML=hr
+                let minutes=document.querySelector("#minutes")
+                if(min<10)
+                min="0"+min
+                minutes.innerHTML=min
+                let seconds=document.querySelector("#seconds")
+                if(sec<10)
+                sec="0"+sec
+                seconds.innerHTML=sec
+            }
+            setInterval(time,1000)
+
+            
+        </script>
+    </head>
+    <body class="bodyAbout">
+        <div class="navbar">
+            <a href="index.html" class="active">HOME</a>
+            <a href="about.html" class="active">ABOUT</a>
+            <a href="contacts.html" class="active">CONTACTS</a>
+        </div>
+        <div class="sidebar">
+            <img class="logo" src="miata-logo.png">
+            <a style="padding-left: 13px; padding-right: 0px; font-size: medium;">Legendary Motorsport</a>
+            <a style="border-top: 1px rgba(0, 0, 0, 0.288) solid;">Bruce Wayne</a>
+            <a style="margin-top: -40px; font-weight:100;">Last Activity 25/03/2024</a>
+        </div>
+        <div class="clock">
+            <h1><span id="hours">00</span>
+            <span>:</span>
+            <span id="minutes">00</span>
+            <span>:</span>
+            <span id="seconds">00</span>
+        </div>
+
+        <div class="divAbout">
+            <div class= "parag">
+                <img src="https://www.legendarymotorsport.ro/wp-content/uploads/2022/06/Untitled-1.png" style="position:absolute; width:250px; height:250px; top: 23%;right: 3%;">
+                <p style="font-weight: bold;">ㅤWe are Legendary Motorsport</p><p class="par1">Fondata nel 2005, Legendary Motorsport è la principale piattaforma per il commercio all'ingrosso di auto ad alte prestazioni. Serviamo milioni di acquirenti
+                e fornitori in tutto il mondo, offrendo un'ampia gamma di veicoli sportivi e di lusso per soddisfare ogni esigenza e desiderio dei nostri clienti.</p>
+            </div>
+
+            <div class= "paraggray">
+                <img src="kisspng-computer-icons-mission-statement-company-marketing-management-philosophy-5ade42bfae4814.9770391615245155197139.png" style="position:absolute; width:250px; height:250px; top: 93%;"></text-align:left>
+                <p style="margin-left: 25%; font-weight: bold;">Our mission</p><p class="par2">Come parte del Gruppo Legendary Motorsport, la nostra missione è rendere semplice fare affari ovunque. Lo facciamo fornendo ai fornitori gli strumenti necessari per raggiungere un pubblico globale per i loro prodotti e aiutando gli acquirenti a trovare prodotti e fornitori in modo rapido ed efficiente.</p>
+            </div>
+            <div class= "parag">
+                <img src="kisspng-marketing-strategy-market-research-business-comput-5afef9b41916c1.3001927115266595081028.png" style="position:absolute; width:250px; height:250px; bottom: -100%;right: 3%;">
+                <p style="font-weight: bold;">ㅤOne stop sourcing</p><p class="par1">Legendary Motorsport vi offre centinaia di modelli di auto ad alte prestazioni, suddivise in oltre 40 categorie principali diverse, tra cui supercar, muscle car, berline sportive e molto altro ancora. I nostri acquirenti provengono da oltre 190 paesi e regioni in tutto il mondo e scambiano centinaia di migliaia di messaggi con i fornitori sulla piattaforma ogni giorno.</p>
+            </div>
+        </div>
+    </body>
+</html>

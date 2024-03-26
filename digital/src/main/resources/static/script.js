@@ -15,9 +15,3 @@ async function getCars(){
     const json = await response.json();
     return json;
 }
-
-export default {
-    getTechs,
-    getClothes,
-    getCars
-}

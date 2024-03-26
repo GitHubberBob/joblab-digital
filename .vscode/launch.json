@@ -1,5 +1,6 @@
 {
-    "configurations": [
+    "configurations": 
+    [
         {
             "type": "java",
             "name": "Spring Boot-DigitalApplication<digital>",

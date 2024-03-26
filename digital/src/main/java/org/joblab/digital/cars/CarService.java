@@ -6,14 +6,17 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 import java.util.UUID;
-
 import org.springframework.stereotype.Service;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.github.javafaker.Faker;
 
 @Service
 public class CarService {
 
+
+    
     private Faker faker = new Faker(new Locale("it-IT"));
     private List<String> brands = Arrays.asList("BMW", "Audi", "Mercedes", "AlfaRomeo", "Fiat", "Skoda", "Renault");
 

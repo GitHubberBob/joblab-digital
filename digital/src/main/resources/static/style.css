@@ -1,0 +1,275 @@
+body
+{
+  padding-top: 40px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.divAbout{
+  margin-left: 200px;
+}
+
+.navbar
+{
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  padding-left: 200px;
+  width: 100%;
+  position: fixed; /* Fissa la navbar */
+  top: 0; /* Posiziona la navbar all'inizio della pagina */
+  z-index: 999; /* Assicura che la navbar sia sopra gli altri contenuti */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.384), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar a
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn
+{
+  background-color: #ddd;
+  color: black;
+}
+
+
+.car1, .car2, .car3, .car4, .car5, .car6, .car7, .car8, .car9 
+{
+  border: 2px solid rgba(0, 0, 0, 0.8);
+}
+.car1 img, .car2 img, .car3 img, .car4 img, .car5 img, .car6 img, .car7 img, .car8 img, .car9 img
+{
+  width: 450px;
+  height: 250px;
+  width: 100%; /* Immagine riempie completamente la larghezza del suo contenitore */
+  height: auto; /* Altezza proporzionale alla larghezza */
+}
+
+.parhome
+{
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}
+
+.cars
+{
+  margin-top: 7px;
+  margin-bottom: 10px;
+  margin-right: 0px;
+  margin-left: 10px;
+  padding: 10px;
+  margin-left: 199px;
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* tre colonne */
+  gap: 20px; /* Spazio tra le auto */
+
+
+  position: relative; /* Assicura che il div cars abbia un contesto di posizionamento */
+  z-index: 1; /* Posiziona il div cars sopra */
+}
+
+.arcobaleno {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.arcobaleno::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(to right, 
+    #FFF8E7,     /* Crema chiaro */
+    #FDF2DB,     /* Crema più scuro */
+    #FBEACF,     /* Crema ancora più scuro */
+    #F9E2C3,     /* Crema ancora più scuro */
+    #F7DAB7,     /* Crema ancora più scuro */
+    #F5D2AB,     /* Crema ancora più scuro */
+    #F3CA9F,     /* Crema ancora più scuro */
+    #F1C293,     /* Crema ancora più scuro */
+    #EFBA87,     /* Crema ancora più scuro */
+    #EDB27B,     /* Crema ancora più scuro */
+    #EBAA6F,     /* Crema ancora più scuro */
+    #E9A263,     /* Crema ancora più scuro */
+    #E79A57,     /* Crema ancora più scuro */
+    #E5924B,     /* Crema ancora più scuro */
+    #E38A3F,     /* Crema ancora più scuro */
+    #E18233,     /* Crema ancora più scuro */
+    #E38A3F,     
+    #E5924B,
+    #E79A57,
+    #E9A263,
+    #EBAA6F,
+    #EDB27B,
+    #EFBA87,
+    #F1C293,
+    #F3CA9F,
+    #F5D2AB,
+    #F7DAB7,
+    #F9E2C3,
+    #FBEACF,
+    #FDF2DB
+  );
+  animation: movementArcobaleno 7s linear infinite;
+}
+
+@keyframes movementArcobaleno {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.car p
+{
+  margin: 5px 0;
+}
+
+
+/*SPALLA*/
+.sidebar 
+{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    height: 100%;
+    overflow: auto;
+    position: absolute;
+    top: 0px;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.562), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  
+.sidebar a
+{
+  font-size:small;
+  display: block;
+  color: black;
+  padding: 20px;
+  margin-bottom: -10px;
+  font-weight: bold;
+}
+
+.logo
+{
+  cursor: pointer;
+  display: inline-block;
+  width: 150px;
+  height: 103px;
+  overflow: hidden;
+  margin-left: 12%;
+  margin-bottom: -20px;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/*clock*/
+.clock
+{
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  position: fixed;
+  z-index: 1000;
+}
+.clock h1
+{
+  font-size: medium;
+}
+
+/*ABOUT*/
+.par1
+{
+  color: black;
+  font-size: 50%;
+  /*border: 2px white;*/
+  margin: 50px; 
+  margin-right: 25%;
+}
+.par2
+{
+  color: black;
+  font-size: 50%;
+  /*border: 2px white;*/
+  margin: 50px; 
+  margin-left: 25%;
+}
+.parag
+{
+  background-color: white;
+  padding: 33px;
+  padding-left: 0;
+  text-align: left;
+  font-size: 300%;
+  color: black;
+}
+.paraggray
+{
+  background-color: lightgray;
+  padding: 33px;
+  text-align: left;
+  font-size: 300%;
+  color: black;
+}
+
+/*CONTACTS*/
+
+#output   /* Stile per il contenitore principale */
+{
+  background-color: #f2f2f2;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  position: absolute;
+  left: 38%;
+  top: 100px;
+}
+
+#output h2 /* Stile per il testo del contenitore */
+{
+  margin: 20px 0;
+  font-size: 36px;
+  color: #333;
+}
+#output p
+{
+  margin: 10px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.icon   /* Stili per le icone */
+{
+  margin-right: 5px;
+  font-size: 24px;
+  color: #007bff;
+}
+
+#output img   /* Stili per l'immagine */
+{
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 12px;
+}
